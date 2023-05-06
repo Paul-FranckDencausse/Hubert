@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<title>Hubert</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+ul
+    {
+    list-style: none;
+    }
+</style>
+<script>
+var modal = document.getElementById('id01');
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
+<head>
+    
+</head>
+<body>
+    <nav class="w3-bar w3-black">
+        <a href="#" class="w3-bar-item w3-button" style="margin-left: 250px;">Hubert</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Entreprise</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="#" class="w3-bar-item w3-button">A propos</a>
+                <a href="#" class="w3-bar-item w3-button">Nos services</a>
+                <a href="#" class="w3-bar-item w3-button">Fonctionnement d'Hubert</a>
+                <a href="#" class="w3-bar-item w3-button">Citoyens du monde</a>
+                <a href="#" class="w3-bar-item w3-button">Espace presse</a>
+                <a href="#" class="w3-bar-item w3-button">Relations avec les investisseurs</a>
+                <a href="#" class="w3-bar-item w3-button">Blog</a>
+                <a href="#" class="w3-bar-item w3-button">Offres d'emploi</a>
+            </div>
+        </div>
+        <a href="#" class="w3-bar-item w3-button">Sécurité</a>
+        <a href="#" class="w3-bar-item w3-button">Aide</a>
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button">FR</button>
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <span onclick="document.getElementById('id01').style.display='none'"class="w3-button w3-display-topright w3-black">&times</span>
+                    <h1 style="color: black;">Sélectionnez votre langue préférée</h1>
+                    <p style="color: black;">English(UK)</p>
+                    <p style="color: black;">Français(France)</p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover" style="margin-left: 500px>
+            <button class="w3-button" >Produits</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a href="#" class="w3-bar-item w3-button">Accueil</a>
+              <a href="#" class="w3-bar-item w3-button">Déplacez vous avec Hubert</a>
+              <a href="#" class="w3-bar-item w3-button">Conduire</a>
+              <a href="#" class="w3-bar-item w3-button">Commandez un repas</a>
+              <a href="#" class="w3-bar-item w3-button">Commerçants</a>
+              <a href="#" class="w3-bar-item w3-button">Chevaux</a>
+              <a href="#" class="w3-bar-item w3-button">Vélos et trotinnettes</a>
+              <a href="#" class="w3-bar-item w3-button">Hubert prend le métro</a>
+              <a href="#" class="w3-bar-item w3-button">Professionnel</a>
+              <a href="#" class="w3-bar-item w3-button">Argent</a>
+            </div>
+          </div> 
+    </nav>
+
+<div style="display: flex;align-items: center; margin-left: 300px;margin-top: 100px;">
+    <div style="margin-right: 50px;">
+        <h1 style="font-weight: bold;">Trouvez l'option de transport<br>
+             qui vous convient</h1>
+        <p>Commandez une course, montez à bord et détendez vous</p>
+        <button class="w3-button w3-black">Inscrivez-vous pour commander une course</button>
+    </div>
+    <div>
+        <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_496,h_592/v1535561382/assets/26/1f9990-25f7-486d-aa25-1a7bef309777/original/D_Rider_Header_Global2x.png">
+    </div>
+</div>
+
+
+<h2 style="font-weight: bold; margin-left: 300px;margin-top: 100px;">Pourquoi utiliser l'application Hubert?</h2>
+<img src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_1152,h_270/v1536163144/assets/27/d1f66e-c9c5-455a-b912-234700f4c0d8/original/whyRideWithUs_desktop.svg" 
+height="600px" width="1200px" style="margin-left: 300px;">
+<div style="display: flex; align-items: center;margin-left: 300px;">
+    <div>
+        <img src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_24,h_24/v1535564184/assets/30/f5ecd4-8ccf-44d0-9976-2833f69df8a9/original/anytime.svg">
+        <h3>Des courses à la demande</h3>
+        <p>Commandez une course quelque soit l'heure ou le jour de l'année</p>
+        <a href="#">Découvrez comment fontionnent les courses</a>
+    </div>
+    <div>
+        <img src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_24,h_24/v1535521926/assets/34/56a7a3-6c7b-46fc-a8c6-91d3271b92bd/original/money.svg">
+        <h3>Des options économiques</h3>
+        <p>Comparez les prix des différents types de courses <br>
+        et choisissez l'offre qui vous convient pour effectuer vos trajets quotidiens<br>
+         ou vous rendre à une soirée spéciale.</p>
+    </div>
+    <div>
+        <img src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_24,h_24/v1535564245/assets/e9/61a3a7-69d2-4ef9-9678-4ecc377a826f/original/reportMap.svg">
+        <h3>Un moyen simple de vous déplacer</h3>
+        <p>Appuyez et laissez votre chauffeur vous conduire à destination.</p>
+    </div>
+</div>
+
+
+<h2 style="font-weight: bold;margin-left: 300px;margin-top: 100px;">Votre sécurité est notre priorité</h2>
+<p style="margin-left: 300px;">La tranquilité d'esprit fait partie intégrante de nos services</p>
+<div style="display: flex; align-items: center; margin-left: 300px;">
+    <div>
+        <img src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_48,h_48/v1535523054/assets/6f/7f63bb-10f4-488b-9000-593bcfe40dca/original/Safety-Center.svg"
+         height="50px" width="50px">
+        <h3>Des fonctionnalités de sécurité</h3>
+        <p>Indiquez votre localisation à vos proches. Obtenez de l'aide en un clic. La technologie rend vos déplacements plus sûrs que jamais.</p>
+        <a href="#">E savoir plus sur la sécurité</a>
+    </div>
+    <div>
+        <img src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_48,h_48/v1535523136/assets/a7/c590ac-242e-47eb-86cb-90db7712d44f/original/Community-Guidelines.svg"
+        height="50px" width="50px">
+        <h3>Une communauté inclusive</h3>
+        <p>Des millions de passagers et de chauffeurs suivent les principes de notre Charte de la communauté et dépendent les uns des autres pour créer un environnement sûr.</p>
+    </div>
+    <div>
+        <img src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_48,h_48/v1535523101/assets/22/bdf7a1-f49f-47c0-a59e-3e6bc274b6f2/original/24_7-Support.svg"
+        height="50px" width="50px">
+        <h3>De l'aide quand vous en avez besoin</h3>
+        <p>Pour toutes vos questions ou inquiétudes liées à la sécurité, profitez du service d'assistance disponible 24 h/24, 7 j/7 dans l'application.</p>
+    </div>
+</div>
+
+
+<div style="margin-left: 300px;margin-top: 100px;">
+    <h2> Types de courses dans la zone</h2>
+    <p>Options les plus populaires</p>
+</div>
+<div class="slideshow-container" style="margin-left: 300px;">
+  <div class="mySlides fade">
+    <div class="slide-content">
+        <div style="display: flex; align-items: center">
+            <div>
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_343,h_193/f_auto,q_auto/products/carousel/UberXL.png">
+                <h3>Hubert XL <span class="w3-tag w3-black">1-6</span></h3>
+                <p>Partez à 6 sans bagage ou à 4 passagers avec vos bagages</p>
+            </div>
+            <div>
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_343,h_193/f_auto,q_auto/products/carousel/UberX.png">
+                <h3>Hubert X <span class="w3-tag w3-black">1-4</span></h3>
+                <p>Economique,rapide,fiable</p>
+            </div>
+            <div>
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_343,h_193/f_auto,q_auto/products/carousel/UberX.png">
+                <h3>Hubert pour l'Ukraine <span class="w3-tag w3-black">1-4</span></h3>
+                <p>1€ permettra d'envoyer des ambulances en Ukraine.<br>
+            Le tarif Hubert for Ukraine est 1€ plus élevé par rapport à un voyage HubertX <br>
+             commandé au même moment pour le même trajet.<br>
+            1€ de chaque trajet sur Hubert for Ukraine ne fait pas partie du tarif,<br> 
+            mais correspond au montant qu'Hubert B.V.<br>
+             envoie à la Fondation Ukraine House DC,<br>
+             partenaire de la plateforme de collecte de fonds UNITED24,<br> 
+             pour l'achat d'ambulances par le ministère ukrainien de la Santé.</p>
+            <button></button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="slide-content">
+        <div style="display: flex; align-items: center">
+            <div>
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_343,h_193/f_auto,q_auto/products/carousel/UberXL.png">
+                <h3>Hubert Pet <span class="w3-tag w3-black">1-4</span></h3>
+                <p>Courses adaptées aux animaux de compagnie</p>
+            </div>
+            <div>
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_343,h_193/f_auto,q_auto/products/carousel/UberX.png">
+                <h3>Hubert vert</h3>
+                <p>100% électriqure ou 100% hybride</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+
+<h2 style="margin-left: 300px;margin-top: 100px;">Partout où vous allez</h2>
+<div style="display: flex; align-items: center;margin-left: 300px;">
+    <div style="margin-right: 20px;">
+        <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_496,h_279/v1536709509/assets/72/31aeed-285c-4298-9cab-83852962b60f/original/D_Ride_cities2x.png" style="margin-right: 10px;">
+        <h3>Plus de 10000 villes</h3>
+        <p>L'application étant disponible depuis des milliers de villes du monde entier, <br>
+            vous pourrez aussi commander des courses si vous êtes loin de chez vous.</p>
+    </div>
+    <div>
+        <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_496,h_279/v1535573711/assets/0d/d7a67e-34e5-4239-a952-7954c0c71951/original/D_Rider_Featured-22x.png">
+        <h3>Plus de 600 aéroports</h3>
+        <p>Vous pouvez commander une course au départ<br>
+             et à destination de la plupart des grands aéroports.<br>
+              Planifiez une course pour vous rendre à l'aéroport<br>
+               et vous n'aurez plus à vous en soucier.</p>    
+    </div>
+</div>
+
+<div class="w3-light-grey" style="display: flex;margin-left: 250px;margin-right: 250px;margin-top: 100px;">
+    <img src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_558,h_372/v1600423778/assets/5a/eb49b9-5a81-41fd-92b5-99a5cb8900ef/original/womanWithPhone_03.svg"
+    height="250px" width="250px">
+    <div>
+        <h2>A chacun son moyen de transport, partout dans le monde</h2>
+        <p>Avec l'application Hubert, choisissez parmi différents types de courses pour aller où vous voulez dans plus de 10 000 villes.</p>
+        <button class="w3-button; w3-black">Découvrez les options de course</button>
+    </div>
+</div>
+    
+    <div style="margin-left: 300px;margin-top: 100px;">
+        <h2>Foire aux questions</h2>
+        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align"> Comment créer un compte?</button>
+        <div id="Demo1" class="w3-hide">
+            <p>
+                Téléchargez l'application Hubert depuis l'App Store ou Google Play,<br>
+                puis créez un compte avec votre adresse e-mail et votre numéro de téléphone portable. <br>
+                Avant de pouvoir commander une course, vous devrez également ajouter un moyen de paiement.
+            <br>
+            <a href="#">Comment créer un compte</a>
+            </p>
+        </div>
+        <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-left-align"> Est-il possible de commander une course avec Hubert dans ma ville?</button>
+        <div id="Demo2" class="w3-hide">
+            <p>
+                Hubert propose ses services dans plus de 10 000 villes à travers le monde.
+                <br>
+                <a href="#">Consultez toutes les villes</a>
+            </p>
+        </div>
+        <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-left-align"> Comment commander une course?</button>
+        <div id="Demo3" class="w3-hide">
+            <p>
+                Lorsque tout est prêt pour votre départ,<br>
+                 ouvrez l'application et saisissez votre destination.<br>
+                  Choisissez ensuite le type de course qui vous convient.<br>
+                   Confirmez votre prise en charge en appuyant sur Confirmer la prise en charge.<br>
+                   <a href="#">Fonctionnement de l'application</a>
+            </p>
+        </div>
+        <button onclick="myFunction('Demo4')" class="w3-button w3-block w3-left-align"> Puis-je utiliser Hubert sans smartphone?</button>
+        <div id="Demo4" class="w3-hide">
+            <p>
+                Oui, dans certaines régions, vous pouvez commander une course en vous connectant sur m.Hubert.com<br>
+                <a href="#">Commandez une course</a>
+            </p>
+        </div>
+    </div>
+
+<div class="w3-light-grey" style="margin-top: 100px;">
+<h2>Faites en plus avec l'application</h2>
+    <div class="w3-card w3-white" style="display: flex; align-items: center;margin-bottom: 50px;">
+        <img src="Hubert.png" height="200px" width="200px">
+        <h3>Téléchargez l'application</h3></div>
+    </div>
+
+    <div>
+<div style="margin-top: 100px;margin-left: 300px;margin-bottom: 100px;">
+    <h2>Inscrivez-vous pour commander une course</h2>
+    <p>Certaines conditions et fonctionnalités varient selon le pays , la région et la ville.</p>
+</div>
+</div>
+
+<div class="w3-black">
+    <p style="margin-left: 90%;">Fonctionnement des applications et des sites web Hubert<br>
+    et Hubert eats.</p>
+<div style="margin-left: 300px;">
+    <p>Hubert</p>
+    <p>Accédez au centre d'aide</p>
+</div>
+<div style="display: flex; margin-left: 300px;">
+    <div>
+        <p >Entreprise
+            <ul style="margin-right: 50px;">
+                <li>A propos</li>
+                <li>Nos services</li>
+                <li>Espace presse</li>
+                <li>Investisseurs</li>
+                <li>Blog</li>
+                <li>Offres d'emploi</li>
+                <li>AI</li>
+                <li>Cartes cadeaux</li>
+            </ul>
+        </p>
+    </div>
+    <div>
+        <p>Produits
+            <ul style="margin-right: 50px;">
+                <li>Déplacez-vous avec Hubert</li>
+                <li>Conduire</li>
+                <lI>Effectuez des livraisons</lI>
+                <li>Commandez un repas</li>
+                <li>Hubert for business</li>
+                <li>Hubert freight</li>
+            </ul>
+        </p>
+    </div>
+    <div>
+        <p>Citoyens du monde
+            <ul style="margin-right: 50px;">
+                <li>Sécurité</li>
+                <li>Diversité et intégration</li>
+                <li>Développement durable</li>
+            </ul>
+        </p>
+    </div>
+    <div>
+        <p>Déplacements
+            <ul style="margin-right: 50px;">
+                <li>Aéroports</li>
+                <li>Villes</li>
+            </ul>
+            </p>
+    </div>
+</div>
+ 
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <p>Français(France) Bordeaux</p>
+        <img src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.3.8/d1a3f4spazzrp4.cloudfront.net/illustrations/app-store-google-4d63c31a3e.svg" height="50px" width="100px">
+        <img src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.3.8/d1a3f4spazzrp4.cloudfront.net/illustrations/app-store-apple-f1f919205b.svg" height="50px" width="100px">
+        <P>Hubert technologies Inc Confidentialité Accessibilité Conditions</P>
+    </div>
+</body>
+</html> 
