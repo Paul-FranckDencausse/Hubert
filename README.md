@@ -54,5 +54,5 @@ Encore une excellente opportunité de franciser ce site web. J’ai commencé pa
 Même si la fonction reste la même, il fallait bien entendu vérifier que chaque question ait un Id différent ainsi que la classe “hide”.
 
 Le résultat est assez probant.
-
+https://docs.google.com/document/d/e/2PACX-1vToDWO1mnNldmRJSA2wwN5QxQnTNR_9voGqQ09VJjI_JAoIypYadKysV2PVXrgshxPoTGT_WZ4FL9CQ/pub
 
